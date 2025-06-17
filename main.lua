@@ -2,14 +2,14 @@ CreateEntity = require "entityClass"
 
 local player1 = CreateEntity({name = "clementine"})
 player1:addComponent("health")
-player1.components.health.SetMaxHealth(player1, 80)
+player1.components.health:SetMaxHealth(80)
 
 local player2 = CreateEntity({name = "zoe"})
 player2:addComponent("health")
-player2.components.health.SetMaxHealth(player2, 50)
+player2.components.health:SetMaxHealth(50)
 
 player2:addComponent("inspectable")
-player2.components.inspectable.SetDescription(player2, "Hello there!!")
+player2.components.inspectable:SetDescription("Hello there!!")
 
 local player3 = CreateEntity()
 player3:addComponent("health")
