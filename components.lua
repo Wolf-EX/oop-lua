@@ -5,7 +5,6 @@ local components = {
     Class = {
 
       maxhealth = 100,
-      minhealth = 0,
       currenthealth = 100,
     },
 
