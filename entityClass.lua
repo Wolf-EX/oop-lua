@@ -2,7 +2,7 @@ local componentList = require "components"
 
 local entityClass = {
   
-  name = "name not set!",
+  name = "undefined",
   
   components = {},
   
