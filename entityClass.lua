@@ -21,9 +21,9 @@ local entityClass = {
 }
 
 local entityConstructer = {__call = function(table, key)
-    obj = {}
-    setmetatable(key or obj, {__index = entityClass})
-    return key or obj
+    obj = key or {}
+    setmetatable(obj, {__index = entityClass})
+    return obj
 end}
 
 setmetatable(entityClass, entityConstructer)
